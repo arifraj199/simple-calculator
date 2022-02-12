@@ -18,7 +18,7 @@
     <!-- header section -->
     <header>
         <section class="w-1/2 mx-auto mt-16">
-            <h1 class="text-4xl font-semibold">Simple <span class="text-indigo-600">Calculator</span> Using JavaScript</h1>
+            <h1 class="text-4xl font-semibold ml-16">Simple <span class="text-indigo-600">Calculator</span> Using JavaScript</h1>
         </section>
 
     </header>
@@ -27,76 +27,76 @@
         <!-- display -->
         <section class="">
             <div class="bg-neutral-800 w-1/5 mx-auto relative mt-8 py-8 rounded">
-                <h1 class="text-white text-2xl font-semibold absolute right-0 px-2">00</h1>
+                <h1 id="display-text" class="text-white text-2xl font-semibold absolute right-0 px-2"></h1>
             </div>
         </section>
         <!-- calculator button -->
         <section>
             <!-- top button -->
             <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
-                <div class="bg-purple-700 col-span-2 rounded text-center text-white px-8 py-4">
-                    <button class="">AC</button>
+                <div class="bg-purple-700 col-span-2 rounded text-center text-white">
+                    <button id="clear-button" class="px-8 py-4">AC</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>%</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">%</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>/</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">/</button>
                 </div>
             </div>
             <!-- numbering button -->
             <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>9</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">9</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>8</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">8</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>7</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">7</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>*</button>
-                </div>
-            </div>
-            <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>6</button>
-                </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>5</button>
-                </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>4</button>
-                </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>-</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">*</button>
                 </div>
             </div>
             <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>3</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">6</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>2</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">5</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>1</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">4</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>+</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">-</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">3</button>
+                </div>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">2</button>
+                </div>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">1</button>
+                </div>
+                <div class="rounded shadow-md text-center">
+                    <button id="add-button" class="button-text px-8 py-4">+</button>
                 </div>
             </div>
             <!-- end button -->
             <div class="grid grid-cols-4 gap-2 rounded w-1/5 mx-auto mt-1">
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>0</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">0</button>
                 </div>
-                <div class="px-8 py-4 rounded shadow-md text-center">
-                    <button>.</button>
+                <div class="rounded shadow-md text-center">
+                    <button class="button-text px-8 py-4">.</button>
                 </div>
-                <div class="bg-purple-700 col-span-2 rounded text-center text-white px-8 py-4">
-                    <button class="">=</button>
+                <div class="bg-purple-700 col-span-2 rounded text-center text-white">
+                    <button id="result-button" class="px-8 py-4">=</button>
                 </div>
             </div>
         </section>
